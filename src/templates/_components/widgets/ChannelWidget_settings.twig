@@ -1,0 +1,26 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * channel plugin for Craft CMS
+ *
+ * ChannelWidget Widget Settings
+ *
+ * @author    Flow
+ * @copyright Copyright (c) 2019 Flow
+ * @link      www.flowsa.com
+ * @package   Channel
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+
+
+{{ forms.textField({
+    label: 'Message',
+    instructions: 'Enter a message here.',
+    id: 'message',
+    name: 'message',
+    value: widget['message']})
+}}

@@ -1,0 +1,24 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * channel plugin for Craft CMS
+ *
+ * ChannelUtility Utility Content
+ *
+ * @author    Flow
+ * @copyright Copyright (c) 2019 Flow
+ * @link      www.flowsa.com
+ * @package   Channel
+ * @since     1.0.0
+ */
+#}
+
+<h1>ChannelUtility</h1>
+
+{% set iconUrl = view.getAssetManager().getPublishedUrl('@flowsa/channel/assetbundles/channelutilityutility/dist', true) ~ '/img/ChannelUtility-icon.svg' %}
+
+<img src="{{ iconUrl }}" height="64" width="64" />
+
+<p>Your Utility content goes here</p>
+
+<p>{{ someVar }}</p>

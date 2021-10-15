@@ -1,0 +1,20 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * channel plugin for Craft CMS
+ *
+ * ChannelWidget Widget Body
+ *
+ * @author    Flow
+ * @copyright Copyright (c) 2019 Flow
+ * @link      www.flowsa.com
+ * @package   Channel
+ * @since     1.0.0
+ */
+#}
+
+{% set iconUrl = view.getAssetManager().getPublishedUrl('@flowsa/channel/assetbundles/channelwidgetwidget/dist', true) ~ '/img/ChannelWidget-icon.svg' %}
+
+<img src="{{ iconUrl }}" height="64" width="64" />
+
+<p>{{ message }}</p>

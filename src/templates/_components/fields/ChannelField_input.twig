@@ -1,0 +1,31 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * channel plugin for Craft CMS 3.x
+ *
+ * ChannelField Field Input
+ *
+ * @author    Flow
+ * @copyright Copyright (c) 2019 Flow
+ * @link      www.flowsa.com
+ * @package   Channel
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{% set options  = [{label: "Select channel"|t('site'), value: null }] %}
+{% for key, section in craft.app.sections.allSections if section.type not in ['single'] and section.handle not in ['landingPages', 'pages'] %}
+    {% for sectionSettings in section.siteSettings if sectionSettings.hasUrls %}
+        {% set options  = options|merge([{label:section.name,value: section.handle}]) %}
+    {% endfor %}
+{% endfor %}
+
+{{ forms.select({
+        id: name,
+        name: name,
+        value:value,
+        options:options
+   })
+}}
