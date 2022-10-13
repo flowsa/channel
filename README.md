@@ -1,4 +1,4 @@
-# channel plugin for Craft CMS 3.x
+# channel plugin for Craft CMS 3.x and CMS 4.x
 
 Gets a list of all sections available for current site
 
