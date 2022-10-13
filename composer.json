@@ -2,7 +2,7 @@
     "name": "flowsa/channel",
     "description": "Gets a list of all sections available for current site",
     "type": "craft-plugin",
-    "version": "1.0.1",
+    "version": "1.2.0",
     "keywords": [
         "craft",
         "cms",
@@ -22,7 +22,7 @@
         }
     ],
     "require": {
-        "craftcms/cms": "^3.0.0-RC1"
+        "craftcms/cms": "^3.0.0-RC1|^4.0"
     },
     "autoload": {
         "psr-4": {
