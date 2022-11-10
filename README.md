@@ -1,6 +1,8 @@
-# channel plugin for Craft CMS 3.x and CMS 4.x
+# channel plugin for Craft CMS 3.x
 
 Gets a list of all sections available for current site
+
+*This is the Craft 3.x version of Channel, for the Craft 4.x version see the [craft4 branch](https://github.com/flowsa/channel/tree/craft4).*
 
 ![Screenshot](resources/img/plugin-logo.png)
 
