@@ -1,4 +1,4 @@
-# channel plugin for Craft CMS 3.x and CMS 4.x
+# channel plugin for Craft CMS 4.x
 
 Gets a list of all sections available for current site
 
@@ -6,7 +6,7 @@ Gets a list of all sections available for current site
 
 ## Requirements
 
-This plugin requires Craft CMS 3.0.0-beta.23 or later.
+This plugin requires Craft CMS 4.0.0 or later.
 
 ## Installation
 

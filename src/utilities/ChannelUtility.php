@@ -59,7 +59,7 @@ class ChannelUtility extends Utility
      *
      * @return string|null The path to the utility SVG icon
      */
-    public static function iconPath()
+    public static function iconPath(): ?string
     {
         return Craft::getAlias("@flowsa/channel/assetbundles/channelutilityutility/dist/img/ChannelUtility-icon.svg");
     }

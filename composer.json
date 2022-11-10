@@ -11,18 +11,18 @@
         "channel"
     ],
     "support": {
-        "docs": "???",
-        "issues": "???"
+        "docs": "https://github.com/flowsa/channel",
+        "issues": "https://github.com/flowsa/channel/issues"
     },
     "license": "MIT",
     "authors": [
         {
             "name": "Flow",
-            "homepage": "www.flowsa.com"
+            "homepage": "https://www.flowsa.com"
         }
     ],
     "require": {
-        "craftcms/cms": "^3.0.0-RC1|^4.0"
+        "craftcms/cms": "^4.0"
     },
     "autoload": {
         "psr-4": {
@@ -39,5 +39,16 @@
             "channelService": "flowsa\\channel\\services\\ChannelService"
         },
         "class": "flowsa\\channel\\Channel"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require-dev": {
+        "craftcms/rector": "dev-main"
+    },
+    "config": {
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true,
+            "craftcms/plugin-installer": true
+        }
     }
 }
