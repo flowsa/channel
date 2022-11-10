@@ -16,11 +16,19 @@ To install the plugin, follow these instructions.
 
         cd /path/to/project
 
-2. Then tell Composer to load the plugin:
+2. Open composer.json, under repositories, add:
 
-        composer require /channel
+        "channel":
+        {
+            "type": "vcs",
+            "url": "https://github.com/flowsa/channel.git"
+        }
 
-3. In the Control Panel, go to Settings → Plugins and click the “Install” button for channel.
+3. Then tell Composer to load the plugin:
+
+        composer require flowsa/channel dev-craft4
+
+4. In the Control Panel, go to Settings → Plugins and click the “Install” button for channel.
 
 ## channel Overview
 
