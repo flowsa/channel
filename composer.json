@@ -38,7 +38,10 @@
         "components": {
             "channelService": "flowsa\\channel\\services\\ChannelService"
         },
-        "class": "flowsa\\channel\\Channel"
+        "class": "flowsa\\channel\\Channel",
+        "branch-alias": {
+            "dev-feature/craft-5": "2.0.x-dev"
+        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
