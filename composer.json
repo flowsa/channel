@@ -11,8 +11,8 @@
         "channel"
     ],
     "support": {
-        "docs": "???",
-        "issues": "???"
+        "docs": "https://www.flowsa.com",
+        "issues": "https://www.flowsa.com"
     },
     "license": "MIT",
     "authors": [
@@ -22,7 +22,7 @@
         }
     ],
     "require": {
-        "craftcms/cms": "^3.0.0-RC1"
+        "craftcms/cms": "^4.0|^5.0"
     },
     "autoload": {
         "psr-4": {
@@ -34,10 +34,22 @@
         "handle": "channel",
         "hasCpSettings": false,
         "hasCpSection": false,
-        "changelogUrl": "???",
+        "changelogUrl": "https://www.flowsa.com",
         "components": {
             "channelService": "flowsa\\channel\\services\\ChannelService"
         },
         "class": "flowsa\\channel\\Channel"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require-dev": {
+        "craftcms/rector": "dev-main",
+        "rector/rector": "^1.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true,
+            "craftcms/plugin-installer": true
+        }
     }
 }
